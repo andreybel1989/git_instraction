@@ -24,7 +24,7 @@ git config ­­global user.email oyasnev@gmail.com
 ## 5. Запись изменений в репозиторий.
 
 ### Просмотр состояния репозитория `git status`
-
+команда `git status`
 ### Добавление изменений `git add`
 
 ### Создание коммитов(сохранение) `git commit`
