@@ -239,12 +239,32 @@ git push --set-upstream origin new_branch
 
 ![create_pull_request.png](create_pull_request.png)  
 
-![commit_create_pull.png](commit_create_pull.png)  
+![commit_create_pull.png](commit_create_pull.png)
 
+### 15. Удаление репозитория из GitHub
 
+Для удаления репозитория необходимо:  
 
++ На странице GitHub нажать `Settings`  
 
+![settings.png](settings.png)  
 
++ Внизу странички найти раздел `Delete this repository`  
 
+![delete_repository.png](delete_repository.png)  
 
- 
++ На появившемся окне нажать `I want to delete this repository`
+
+![want_dell.png](want_dell.png)  
+
++ На появившемся окне нажать `I have read and understand these effects`
+
+![have_read.png](have_read.png)  
+
++ Скопировать название репозитория и нажать `Delete this repository`
+
+![copu_confirm.png](copu_confirm.png)  
+
++ Ввести пароль от аккаунта для подтверждения удаления и нажать `Confirm`
+
+![password.png](password.png)  
