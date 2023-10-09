@@ -208,8 +208,38 @@ fatal: not a git repository (or any of the parent directories): .git
 ![fork.png](fork.png)  
 
 На локальном компьютере убеждаемся, что в директории где мы находимся нет репозиториев, вызываем терминал и выполняем команду `git clone <url- адрес>`  
+Для изменения имени репозитория необходимо в конце команды `git clone` ввести желаемое имя репозитория:
+```
+git clone https://github.com/andreybel1989/TestPR.git NEW_NAME
+```  
+Все передлагаемые изменения делаются в отдельных ветках. Для создания веток будем использовать команду `git switc -c name_branch` которая не только создает новую ветку, но и переходит на ее. После внесения изменений необходимо выполнить комманды `git add` и `git commit -m "комментарий"` в зависимости какие изменения мы вносили.
 
+Далее нам необходимо выполнить выгрузку в удаленный репозиторий. Но необходимо помнить, что команда `git push` не выполнится и выдаст такое сообщение:  
+```
+fatal: The current branch new_branch has no upstream branch.
+To push the current branch and set the remote as upstream, use
 
+    git push --set-upstream origin new_branch
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+```  
+в котором говориться, что в удаленном репозитории не существует ветки `new_branch` поэтому выгрузка данным способом не возможна. В этом случае для добавления изменений в удаленный репозиторий необходимо выполнить команду:  
+```
+git push --set-upstream origin new_branch
+```  
+
+Переходим в аккаунт GitHub и нажимаем `Pull requests` => `New pull requests`=> выбираем нашу ветку (new_branch)=> `Create pull requests` => называем pull requests(при необходимости пишем описание)=> `Create pull requests`  
+
+![pull_request.png](pull_request.png)  
+
+![new_pull.png](new_pull.png)  
+
+![pull_branch.png](pull_branch.png)  
+
+![create_pull_request.png](create_pull_request.png)  
+
+![commit_create_pull.png](commit_create_pull.png)  
 
 
 
